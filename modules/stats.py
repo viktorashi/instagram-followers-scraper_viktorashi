@@ -38,7 +38,7 @@ def diff(current = [], previous = []):
                 print(user)
 
         print('\n' + '-' * 10 + '\n')
-        if (new_length is not 0):
+        if (new_length != 0):
             print_users(new_users)
-        if (lost_length is not 0):
+        if (lost_length != 0):
             print_users(lost_users, True)

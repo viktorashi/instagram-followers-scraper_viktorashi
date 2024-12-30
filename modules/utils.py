@@ -8,7 +8,7 @@ def ask_input(prompt = '', is_password = False):
 
     while True:
         answer = getpass.getpass() if is_password == True else input(prompt)
-        if answer is not '':
+        if answer != '':
             return answer
 
 
@@ -23,7 +23,7 @@ def ask_multiple_option(options, prefix = 'Choose between', prompt = ': '):
         for index, option in enumerate(options):
             print('  {} - {}'.format(index + 1, option))
         answer = input(prompt).strip()
-        if answer is not '':
+        if answer != '':
             index = int(answer) - 1
             if exists(index):
                 return options[index]
