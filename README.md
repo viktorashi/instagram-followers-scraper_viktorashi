@@ -41,6 +41,11 @@ python3 main.py
 
 You'll be asked to input the username that you want to analyze and your Instagram credentials. You can get info about followers, following or both. The data will be stored in the `exports` folder. 
 
+You can also write your config with all your options inside `config.txt` and do
+```bash
+cat config.txt | python main.py
+```
+
 ## TODO
 
 - Speed up scraping of the users. Right now scraping is quite slow and can be improved
